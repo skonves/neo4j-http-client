@@ -5,12 +5,13 @@ const request = require('superagent');
 module.exports = class Neo4jClient {
 	/**
 	 *
-	 * @param {string} serviceRoot (eg. https://127.0.0.1)
-	 * @param {string} authToken
+	 * @param {string} serviceRoot (eg. https://127.0.0.1:7474)
+	 * @param {string} username
+	 * @param {string} password
 	 */
-	constructor(serviceRoot, authToken) {
+	constructor(serviceRoot, username, password) {
 		this.serviceRoot = serviceRoot;
-		this.authToken = authToken;
+		this.authToken = Buffer.from(`${username}:${password}`, 'utf8').toString('base64');
 	}
 
 	/**
