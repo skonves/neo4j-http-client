@@ -4,6 +4,8 @@
   "description": "Simple HTTP client for Neo4j",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./",
+    "lintfix": "eslint --fix ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/skonves/neo4j-http-client/issues"
   },
-  "homepage": "https://github.com/skonves/neo4j-http-client#readme"
+  "homepage": "https://github.com/skonves/neo4j-http-client#readme",
+  "devDependencies": {
+    "eslint": "^4.2.0"
+  }
 }
