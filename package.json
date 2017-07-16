@@ -1,0 +1,22 @@
+{
+  "name": "neo4j-http-client",
+  "version": "0.0.1",
+  "description": "Simple HTTP client for Neo4j",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/skonves/neo4j-http-client.git"
+  },
+  "keywords": [
+    "neo4j"
+  ],
+  "author": "Steve Konves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skonves/neo4j-http-client/issues"
+  },
+  "homepage": "https://github.com/skonves/neo4j-http-client#readme"
+}
